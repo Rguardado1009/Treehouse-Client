@@ -30,28 +30,28 @@ const Navbar = ({ toggle }) => {
         <Menu>
           <NavItem>
             <NavLinks to="/">
-              <Button onClick={toggle}>Home</Button>
+              <Button>Home</Button>
             </NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks to="/Services">
-              <Button onClick={toggle}>Services</Button>
+              <Button>Services</Button>
             </NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks to="/Contact">
-              <Button onClick={toggle}>Contact</Button>
+              <Button>Contact</Button>
             </NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks to="/About">
-              <Button onClick={toggle}>About</Button>
+              <Button>About</Button>
             </NavLinks>
           </NavItem>
         </Menu>
         <Login>
           <NavLinks to="/Login">
-            <Button onClick={toggle}>Login</Button>
+            <Button>Login</Button>
           </NavLinks>
         </Login>
       </NavbarContainer>
