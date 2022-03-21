@@ -35,7 +35,7 @@ export default function Header() {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
-            Book Now {hover ? <ArrowForward /> : <ArrowRight />}
+            Book Now
           </Button>
         </HeaderBtnWrapper>
       </HeaderContent>

@@ -18,7 +18,15 @@ const Navbar = ({ toggle }) => {
   return (
     <MainContainer>
       <NavbarContainer>
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+            display: "flex",
+            justifyContent: "spaceEvenly",
+            flexDirection: "column",
+          }}
+        >
           <Logo> treehouse </Logo>
           <Logo> studios </Logo>
         </Link>

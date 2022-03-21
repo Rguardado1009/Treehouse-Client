@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const MainContainer = styled.nav`
   background: #2b2b2b;
   height: 10vh;
-  /* margin-top: -80px; */
+  /* margin-top: -10vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +22,11 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  width: 100%;
   padding: 0 24px;
   width: 100vw;
   max-width: 1100px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 `;
 export const Logo = styled.h1`
   font-family: "Roboto";
@@ -89,11 +90,9 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.8rem;
     cursor: pointer;
   } ;

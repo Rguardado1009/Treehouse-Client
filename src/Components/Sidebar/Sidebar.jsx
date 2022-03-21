@@ -31,12 +31,12 @@ const Sidebar = ({ isOpen, toggle }) => {
             About
           </SidebarLink>
         </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarLink to="/Login" onClick={toggle}>
-            <SidebarButton>Login</SidebarButton>
-          </SidebarLink>
-        </SideBtnWrap>
       </SidebarWrapper>
+      <SideBtnWrap>
+        <SidebarLink to="/Login" onClick={toggle}>
+          <SidebarButton>Login</SidebarButton>
+        </SidebarLink>
+      </SideBtnWrap>
     </SidebarContainer>
   );
 };
