@@ -10,7 +10,7 @@ import {
   SideBtnWrap,
   SidebarButton,
 } from "../Sidebar/SidebarStyles";
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen, toggle, signIn }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon>
@@ -34,7 +34,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       </SidebarWrapper>
       <SideBtnWrap>
         <SidebarLink to="/Login" onClick={toggle}>
-          <SidebarButton>Login</SidebarButton>
+          <SidebarButton onClick={signIn}>Login</SidebarButton>
         </SidebarLink>
       </SideBtnWrap>
     </SidebarContainer>

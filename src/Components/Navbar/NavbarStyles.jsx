@@ -10,6 +10,7 @@ export const MainContainer = styled.nav`
   align-items: center;
   font-size: 1rem;
   position: sticky;
+
   top: 0;
   z-index: 10;
   @media screen and (max-width: 960px) {
@@ -64,7 +65,7 @@ export const Button = styled.button`
   }
 `;
 export const Login = styled.button`
-  border: 1px solid #00e7af;
+  border: 1px solid #009994;
   box-sizing: border-box;
   border-radius: 24px;
   font-family: "Roboto";
@@ -104,7 +105,6 @@ export const Menu = styled.div`
   list-style: none;
   text-align: center;
   margin-right: -22px;
-
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -113,6 +113,7 @@ export const Menu = styled.div`
 export const NavItem = styled.li`
   height: 2rem;
   list-style: none;
+  width: 100%;
 `;
 
 export const NavLinks = styled(Link)`
@@ -124,8 +125,7 @@ export const NavLinks = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  width: 100%;
   &.active {
-    border-bottom: 1px solid #00e7af;
+    border-bottom: 1px solid #009994;
   }
 `;
