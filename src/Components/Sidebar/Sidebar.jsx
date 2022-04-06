@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Login from "../Login/Login";
+import { Link } from "react-router-dom";
+
 import {
   SidebarContainer,
   Icon,
@@ -10,7 +12,12 @@ import {
   SideBtnWrap,
   SidebarButton,
 } from "../Sidebar/SidebarStyles";
-const Sidebar = ({ isOpen, toggle }) => {
+import { useSelector } from "react-redux";
+import { selectUserName } from "../../features/user/userSlice.js";
+import { useLogout } from "../../hooks/useLogout.js";
+const Sidebar = ({ isOpen, toggle, signIn }) => {
+  const userName = useSelector(selectUserName);
+  const { logout } = useLogout();
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon>
@@ -33,12 +40,18 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SidebarMenu>
       </SidebarWrapper>
       <SideBtnWrap>
-        <SidebarLink to="/Login" onClick={toggle}>
-          <SidebarButton>Login</SidebarButton>
-        </SidebarLink>
+        {userName ? (
+          <SidebarLink to="/Login" onClick={toggle}>
+            <SidebarButton onClick={logout}>Sign Out</SidebarButton>
+          </SidebarLink>
+        ) : (
+          <SidebarLink to="/Login" onClick={toggle}>
+            <SidebarButton>Login</SidebarButton>
+          </SidebarLink>
+        )}
       </SideBtnWrap>
     </SidebarContainer>
   );
-};
+};``
 
 export default Sidebar;

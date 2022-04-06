@@ -5,17 +5,14 @@ import {
   HeaderH1,
   HeaderP,
   HeaderBtnWrapper,
-  ArrowForward,
-  ArrowRight,
   Button,
 } from "./HeaderStyles";
 
 export default function Header() {
-  const [hover, setHover] = useState(false);
-
   const onHover = () => {
     setHover(!hover);
   };
+
   return (
     <HeaderContainer id="home">
       <HeaderContent>
@@ -24,7 +21,6 @@ export default function Header() {
         <HeaderP>For Artist By Artist</HeaderP>
         <HeaderBtnWrapper>
           <Button
-            to="signup"
             smooth={true}
             duration={500}
             spy={true}

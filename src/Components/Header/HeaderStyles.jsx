@@ -69,7 +69,7 @@ export const HeaderH1 = styled.h1`
   color: #fff;
   font-size: 72px;
   text-align: center;
-  color: #00e7af;
+  color: #2ab4a5;
   opacity: 0.5;
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -128,6 +128,6 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   /* identical to box height */
-  background-color: #00e7af;
+  background-color: #2ab4a5;
   color: #000;
 `;
